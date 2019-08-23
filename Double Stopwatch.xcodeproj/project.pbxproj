@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B06BE05230F85100027E843 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B06BE04230F85100027E843 /* Default-568h@2x.png */; };
 		1BC659CE21267E8000F5921D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC659CD21267E8000F5921D /* AppDelegate.swift */; };
 		1BC659D021267E8000F5921D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC659CF21267E8000F5921D /* ViewController.swift */; };
 		1BC659D321267E8000F5921D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC659D121267E8000F5921D /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BC659CA21267E8000F5921D /* Double Stopwatch v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Double Stopwatch v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B06BE04230F85100027E843 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1BC659CA21267E8000F5921D /* Double Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Double Stopwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC659CD21267E8000F5921D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC659CF21267E8000F5921D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BC659D221267E8000F5921D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +40,8 @@
 		1BC659C121267E8000F5921D = {
 			isa = PBXGroup;
 			children = (
-				1BC659CC21267E8000F5921D /* Double Stopwatch v2 */,
+				1B06BE04230F85100027E843 /* Default-568h@2x.png */,
+				1BC659CC21267E8000F5921D /* Double Stopwatch */,
 				1BC659CB21267E8000F5921D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +49,12 @@
 		1BC659CB21267E8000F5921D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BC659CA21267E8000F5921D /* Double Stopwatch v2.app */,
+				1BC659CA21267E8000F5921D /* Double Stopwatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BC659CC21267E8000F5921D /* Double Stopwatch v2 */ = {
+		1BC659CC21267E8000F5921D /* Double Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
 				1BC659CD21267E8000F5921D /* AppDelegate.swift */,
@@ -61,15 +64,15 @@
 				1BC659D621267E8100F5921D /* LaunchScreen.storyboard */,
 				1BC659D921267E8100F5921D /* Info.plist */,
 			);
-			path = "Double Stopwatch v2";
+			path = "Double Stopwatch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BC659C921267E8000F5921D /* Double Stopwatch v2 */ = {
+		1BC659C921267E8000F5921D /* Double Stopwatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BC659DC21267E8100F5921D /* Build configuration list for PBXNativeTarget "Double Stopwatch v2" */;
+			buildConfigurationList = 1BC659DC21267E8100F5921D /* Build configuration list for PBXNativeTarget "Double Stopwatch" */;
 			buildPhases = (
 				1BC659C621267E8000F5921D /* Sources */,
 				1BC659C721267E8000F5921D /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "Double Stopwatch v2";
+			name = "Double Stopwatch";
 			productName = "Double Stopwatch v2";
-			productReference = 1BC659CA21267E8000F5921D /* Double Stopwatch v2.app */;
+			productReference = 1BC659CA21267E8000F5921D /* Double Stopwatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1BC659C521267E8000F5921D /* Build configuration list for PBXProject "Double Stopwatch v2" */;
+			buildConfigurationList = 1BC659C521267E8000F5921D /* Build configuration list for PBXProject "Double Stopwatch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BC659C921267E8000F5921D /* Double Stopwatch v2 */,
+				1BC659C921267E8000F5921D /* Double Stopwatch */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC659D821267E8100F5921D /* LaunchScreen.storyboard in Resources */,
+				1B06BE05230F85100027E843 /* Default-568h@2x.png in Resources */,
 				1BC659D521267E8100F5921D /* Assets.xcassets in Resources */,
 				1BC659D321267E8000F5921D /* Main.storyboard in Resources */,
 			);
@@ -283,12 +287,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A55KKABAVR;
-				INFOPLIST_FILE = "Double Stopwatch v2/Info.plist";
+				INFOPLIST_FILE = "Double Stopwatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "JAMOrg.Double-Stopwatch-v2";
+				PRODUCT_BUNDLE_IDENTIFIER = "JAMOrg.Double-Stopwatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,12 +305,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A55KKABAVR;
-				INFOPLIST_FILE = "Double Stopwatch v2/Info.plist";
+				INFOPLIST_FILE = "Double Stopwatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "JAMOrg.Double-Stopwatch-v2";
+				PRODUCT_BUNDLE_IDENTIFIER = "JAMOrg.Double-Stopwatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BC659C521267E8000F5921D /* Build configuration list for PBXProject "Double Stopwatch v2" */ = {
+		1BC659C521267E8000F5921D /* Build configuration list for PBXProject "Double Stopwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BC659DA21267E8100F5921D /* Debug */,
@@ -325,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BC659DC21267E8100F5921D /* Build configuration list for PBXNativeTarget "Double Stopwatch v2" */ = {
+		1BC659DC21267E8100F5921D /* Build configuration list for PBXNativeTarget "Double Stopwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BC659DD21267E8100F5921D /* Debug */,
