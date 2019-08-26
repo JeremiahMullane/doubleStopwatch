@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // Outlets for Timer A labels
     @IBOutlet weak var labelMillisecsA: UILabel!
@@ -39,6 +39,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonLapResetB: UIButton!
     @IBOutlet weak var buttonStartStopB: UIButton!
     
+    //Outlet for Timer B Lap Table
+    @IBOutlet weak var LapTableViewB: UITableView!
+    
     // Timer B variables
     weak var timerB: Timer?
     var startTimeB: Double = 0
@@ -47,11 +50,22 @@ class ViewController: UIViewController {
     var lapSumB: Double = 0
     var runningB: Bool = false
     
+    //TEST VARIABLES FOR TABLEVIEW
+    var lapBdata : [Double] = []
+    
     //----------------------------------
     // Standard inherited view functions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //TESTING TABLEVIEW
+        LapTableViewB.delegate = self
+        LapTableViewB.dataSource = self
+        for _ in 0...5 {
+            lapBdata.append(0.0)
+        }
+        
         buttonLapResetA.isEnabled = false
         buttonLapResetB.isEnabled = false
     }
@@ -63,6 +77,23 @@ class ViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lapBdata.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = UITableViewCell()
+        cell = tableView.dequeueReusableCell(withIdentifier: "cellB", for: indexPath)
+        cell.textLabel?.text = String(lapBdata[indexPath.row])
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.black
+        return cell
     }
     //----------------------------------
     
